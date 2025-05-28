@@ -28,7 +28,7 @@ export default function AppProvider({ children }:{children : React.ReactNode}) {
   const [token,setToken] = useState(localStorage.getItem('token'))
   const [user,setUser] = useState<null |userType>(null)
   async function getUser(){
-    const res = await fetch("https://mylaravelapi.vercel.app/api/api/user",{
+    const res = await fetch("https://mylaravelapi.vercel.app/api/user",{
       headers:{
         Authorization:`Bearer ${token}`,},
       }
