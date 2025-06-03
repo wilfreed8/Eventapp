@@ -8,8 +8,8 @@ export default defineConfig({
   server:{
     proxy:{
       '/api':{
-        target:'https://mylaravelapi.vercel.app',
-        changeOrigin:true,
+        target:'https://mylaravelapi.vercel.app/api',
+        changeOrigin:true, 
         headers : {
           Accept: 'application/json',
           "Content-Type":'application/json',
