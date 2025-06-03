@@ -3,6 +3,10 @@
     {
       "source": "/api/(.*)",
       "destination": "https://mylaravelapi.vercel.app/api/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
